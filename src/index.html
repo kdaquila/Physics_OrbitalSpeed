@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Orbital Speed</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <h2>Question:</h2>
+                <p>What speed is required to travel in a circular orbit around a planet?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h2>Inputs:</h2>
+            </div>
+            <div class="input-field col s12 m6 l4">
+                <select name="planetMass" id="planetMass">
+                    <option value="0.330e24">Mercury (0.330e24 kg)</option>
+                    <option value="4.87e24">Venus (4.87e24 kg)</option>
+                    <option value="5.97e24">Earth (5.97e24 kg)</option>
+                    <option value="0.642e24">Mars (0.642e24 kg)</option>
+                    <option value="1898e24">Jupiter (1898e24 kg)</option>
+                    <option value="568e24">Saturn (568e24 kg)</option>
+                    <option value="86.8e24">Uranus (86.8e24 kg)</option>
+                    <option value="102e24">Neptune (102e24 kg)</option>
+                </select>
+                <label for="planetMass">Planet Mass</label>
+            </div>
+            <div class="input-field col s12 m6 l4">
+                <select name="planetDiameter" id="planetDiameter">
+                    <option value="4.879e6">Mercury (4.879e6 m)</option>
+                    <option value="12.104e6">Venus (12.104e6 m)</option>
+                    <option value="12.756e6">Earth (12.756e6 m)</option>
+                    <option value="6.792e6">Mars (6.792e6 m)</option>
+                    <option value="142.984e6">Jupiter (142.984e6 m)</option>
+                    <option value="120.536e6">Saturn (120.536e6 m)</option>
+                    <option value="51.118e6">Uranus (51.118e6 m)</option>
+                    <option value="49.528e6">Neptune (49.528e6 m)</option>
+                </select>
+                <label for="planetDiameter">Planet Diameter</label>
+            </div>
+            <div class="input-field col s12 m6 l4">
+                <input type="number" name="altitude" id="altitude" value="2e6" placeholder="Enter a number in meters">
+                <label for="altitude">Altitude (m)</label>
+            </div>
+            <div class="input-field col s12">
+                <button class="btn" type="button" onclick="handle_clickCompute()">Compute</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <h2>Results:</h2>
+            </div>
+            <div class="input-field col s12 m6 l4">
+                <input type="number" name="orbitalSpeed" id="orbitalSpeed" placeholder="n/a" disabled>
+                <label for="orbitalSpeed">Orbital Speed (m/s)</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="initializeMaterializeSelectElements.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

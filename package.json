@@ -1,0 +1,24 @@
+{
+  "name": "Physics_OrbitalSpeed",
+  "version": "1.0.0",
+  "description": "Exploration project for Materialize with CSS. This webpage can compute the speed needed to orbit a planet at a particular altitude..",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server --open=./src --watch=./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdaquila/Physics_OrbitalSpeed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdaquila/Physics_OrbitalSpeed/issues"
+  },
+  "homepage": "https://github.com/kdaquila/Physics_OrbitalSpeed#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "materialize-css": "^1.0.0"
+  }
+}
